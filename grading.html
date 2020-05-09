@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+        }
+        .biru-muda { background-color: lightblue;}
+        .kotak {
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+
+        }
+        .merah {background-color: red; border: 2px solid #555555;}
+        .hijau {background-color: green; border: 2px solid #555555;}
+        .biru {background-color: blue; border: 2px solid #555555;}
+        .button {
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            background-color: #555555;
+            border: 2px solid #555555;
+        }
+        .buton {
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            background-color: #e7e7e7;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        h1{
+  margin:0;
+  margin-bottom:10px;
+  margin-top:10px;
+}
+h1{
+  font-size:3em;
+  font-family: arial;
+}
+
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 25%;
+  height: 25px;
+  background: #d3d3d3; 
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+}
+
+
+.slider:hover {
+  opacity: 1; 
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 25px; 
+  height: 25px; 
+  background: #555555; 
+  cursor: pointer; 
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; 
+  height: 25px; 
+  background: #555555; 
+  cursor: pointer; 
+}
+    </style>
+    <title>Latihan dom</title>
+    
+    
+    
+    
+</head>
+<body>
+    
+    <h1>Grading Tool</h1>
+    <br>
+    <button type="button" id="tUbahWarna" class="buton" >ubah warnaa</button>
+
+    <br><br>
+
+    <div class="kotak merah"></div>
+    <input type="range" name="sMerah" min="1" max="255" class="slider">
+
+    <div class="kotak hijau"></div>
+    <input type="range" name="sHijau" min="1" max="255" class="slider">
+
+    <div class="kotak biru"></div>
+    <input type="range" name="sBiru" min="1" max="255" class="slider">
+
+    
+    <script src="domGrading.js"></script>
+</body>
+</html>
